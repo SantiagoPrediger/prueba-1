@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+    margin-bottom: 120px;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 40%;
+}
+
+/* BODY */
+body {
+    background-image: url(../img/fondopag.jpg);
+    background-size: 100%;
+}
+
+/* BARRA DE NAVEGACION */
+
+nav {
+    max-width: 85%;
+    margin: auto;
+    font-family: 'nunito';
+    text-transform: uppercase;
+}
+li a {
+    color: black;
+    font-size: 0.8rem;
+}
+.menuHorizontal li a:hover{
+    font-weight: 700;
+}
+.menuHorizontal {
+    display: flex;
+    justify-content: space-around;
+}
+.menuVertical {
+    position: absolute;
+    display: none;
+}
+.menuHorizontal li:hover .menuVertical {
+    display: block;
+}
+
+/* MAIN */
+
+.main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main img {
+    width: 100%;
+    padding: 8px 16px;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'nunito';
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 25px 10px 25px;
+    width: 100%;
+}
+
+.footer h3 {
+    font-weight: 200;
+    font-size: 0.87rem;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.footer p {
+    font-size: 0.6rem;
+    margin-top: 20px;
+}
+
+@media (min-width: 680px){
+
+    li a {
+        font-size: 1rem;
+    }
+    .logo {
+        width: 30%;
+    }
+    .footer ul {
+        width: 35%;
+    }
+    .footer p{
+        font-size: 0.7rem;
+    }
+    .galeriaPrincipal {
+        max-width: 90%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (min-width:1200px){
+    
+    .logo {
+        width: 18%;
+    }
+    nav {
+        max-width: 50%;
+    }
+    li a {
+        font-size: 1.15rem;
+    }
+    .galeriaPrincipal {
+        max-width: 95%;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+    }
+    main {
+        min-height: 80vh;
+    }
+    .footer{
+        margin-top: 15px;
+    }
+    .footer ul {
+        max-width: 20%;
+    }
+}
+
